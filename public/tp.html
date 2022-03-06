@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+<!-- courasal -->
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+body{
+  background-color: #2696E9;
+}
+.baghwan{
+  display: flex;
+justify-content: center;
+width: 70vw;
+height: 60vh;
+background-color:#2696E9;
+padding-left: 820px;
+padding-top: 50px;
+}
+
+
+.img-slider{
+position: relative;  
+ height: 500px;
+/* width: 600px; */
+margin: 10px;
+margin-bottom: 80px;
+background: #1D212B;
+
+}
+
+.img-slider .slide{
+z-index: 1;
+position: absolute;
+width: 100%;
+clip-path: circle(0% at 0 50%);
+}
+
+.img-slider .slide.active{
+clip-path: circle(150% at 0 50%);
+transition: 2s;
+transition-property: clip-path;
+}
+
+.img-slider .slide img{
+z-index: 1;
+height: fit-content;
+width: fit-content;
+border-radius: 5px;
+}
+
+.img-slider .slide .info{
+position: absolute;
+top: 0;
+padding: 15px 30px;
+}
+
+.img-slider .slide .info h2{
+color: #fff;
+font-size: 45px;
+text-transform: uppercase;
+font-weight: 800;
+letter-spacing: 2px;
+}
+
+.img-slider .slide .info p{
+color: #fff;
+background: rgba(0, 0, 0, 0.1);
+font-size: 16px;
+width: 60%;
+padding: 10px;
+border-radius: 4px;
+}
+
+.img-slider .navigation{
+z-index: 2;
+position: absolute;
+display: flex;
+bottom: 30px;
+left: 50%;
+transform: translateX(-50%);
+}
+
+.img-slider .navigation .btn{
+background: rgba(255, 255, 255, 0.5);
+width: 12px;
+height: 12px;
+margin: 10px;
+border-radius: 50%;
+cursor: pointer;
+}
+
+.img-slider .navigation .btn.active{
+background: #2696E9;
+box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+}
+
+/* @media (max-width: 820px){
+.img-slider{
+width: 600px;
+height: 375px;
+} */
+
+.img-slider .slide .info{
+padding: 10px 25px;
+}
+
+.img-slider .slide .info h2{
+font-size: 35px;
+}
+
+.img-slider .slide .info p{
+width: 70%;
+font-size: 15px;
+}
+
+.img-slider .navigation{
+bottom: 25px;
+}
+
+.img-slider .navigation .btn{
+width: 10px;
+height: 10px;
+margin: 8px;
+}
+
+
+/* @media (max-width: 620px){
+.img-slider{
+width: 400px;
+height: 250px;
+} */
+
+.img-slider .slide .info{
+padding: 10px 20px;
+}
+
+.img-slider .slide .info h2{
+font-size: 30px;
+}
+
+.img-slider .slide .info p{
+width: 80%;
+font-size: 13px;
+}
+
+.img-slider .navigation{
+bottom: 15px;
+}
+
+.img-slider .navigation .btn{
+width: 8px;
+height: 8px;
+margin: 6px;
+}
+
+/* 
+@media (max-width: 420px){
+.img-slider{
+width: 320px;
+height: 200px;
+} */
+
+.img-slider .slide .info{
+padding: 5px 10px;
+}
+
+.img-slider .slide .info h2{
+font-size: 25px;
+}
+
+.img-slider .slide .info p{
+width: 90%;
+font-size: 11px;
+}
+
+.img-slider .navigation{
+bottom: 10px;
+}
+
+
+</style>
+<!-- team  -->
+<style>
+  body{
+    /* background: #262626; */
+}
+.team-area{
+    padding-top: 5%;
+    display: flex;
+    justify-content: center;
+
+}
+.single-team{
+    background-color: #000;
+    margin-bottom: 10px;
+}
+.single-team:hover .social{
+    cursor: pointer;
+    opacity: 1;
+    transform: rotateY(0deg) scale(1, 1);
+}
+.img-area{
+    overflow: hidden;
+    position: relative;
+}
+.img-area img{
+    width: 100%;
+}
+.img-area:hover img{
+    transform: scale(1.2)
+}
+.img-area img{
+    transition: all 0.4s ease 0s;
+}
+@media (max-width: 768px){
+    .img-area img{
+        display: inline-block;
+    }
+}
+.img-area .social{
+    background-color: rgba(0,0,0,0.7);
+    position: absolute;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    transition: .5s;
+    transform: rotateY(180deg) scale(0.5, 0.5);
+}
+.img-area .social ul{
+    text-align: center;
+    position: relative;
+    top: 175px;
+}
+.img-area .social ul li a{
+    border: 1px solid #fff;
+    color: #fff;
+    display: block;
+    font-size: 20px;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    text-align: center;
+}
+.img-area .social ul li a:hover{
+    background-color: #fff;
+    color: #000;
+    border: 1px solid transparent;
+}
+.img-text{
+    padding: 25px;
+    color: #fff;
+    text-align: center;
+}
+.img-text h4{
+    margin: 0 0 5px;
+    font-size: 30px;
+    font-family: bignoodletitling;
+    letter-spacing: 5px;
+}
+.img-text h5{
+    font-size: 17px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+</style>
+  </head>
+  <body>
+
+
+<div class="baghwan">
+
+
+
+<div class="team-area d-flex justify-content-center">
+<div class="container d-flex justify-content-center">
+<div class="row d-flex justify-content-center">
+   <div class="img-slider mt-[80px]">
+            <div class="slide active">
+              <div class="col-md-4 col-sm-6 col-xs-12">
+                <div class="single-team">
+                  <div class="img-area">
+                    <img src="https://i.postimg.cc/PqMYrY4D/3.jpg" class="img-responsive" alt="">
+                    <div class="social">
+                      <ul class="list-inline">
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="img-text">
+                    <h4>Kishita Patel</h4>
+                    <h5>Pitcher</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="slide active ">
+              <div class="col-md-4 col-sm-6 col-xs-12">
+                <div class="single-team">
+                  <div class="img-area">
+                    <img src="https://i.postimg.cc/qRjsQy6r/1.jpg" class="img-responsive" alt="">
+                    <div class="social">
+                      <ul class="list-inline">
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="img-text">
+                    <h4>Abhinav Anand</h4>
+                    <h5>Mannager</h5>
+                  </div>
+                </div>
+              </div>
+              </div>
+              <div class="slide active ">
+                    
+                  <div class="col-md-4 col-sm-6 col-xs-12">
+                    <div class="single-team">
+                      <div class="img-area">
+                        <img src="https://i.postimg.cc/wMMhrMDm/2.jpg" class="img-responsive" alt="">
+                        <div class="social">
+                          <ul class="list-inline">
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="img-text">
+                        <h4>Dheerap Tanwar</h4>
+                        <h5>Researcher</h5>
+                      </div>
+                    </div>
+                  </div>
+
+              </div>
+            
+              <div class="slide active ">
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                  <div class="single-team">
+                    <div class="img-area">
+                      <img src="https://i.postimg.cc/qRjsQy6r/1.jpg" class="img-responsive" alt="">
+                      <div class="social">
+                        <ul class="list-inline">
+                          <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                          <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                          <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                          <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="img-text">
+                      <h4>Prasshadi Rathod</h4>
+                      <h5>Chat Bot developer</h5>
+                    </div>
+                  </div>
+                </div>
+                </div>
+                <div class="slide active">
+                  <div class="col-md-4 col-sm-6 col-xs-12">
+                    <div class="single-team">
+                      <div class="img-area">
+                        <img src="https://i.postimg.cc/PqMYrY4D/3.jpg" class="img-responsive" alt="">
+                        <div class="social">
+                          <ul class="list-inline">
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="img-text">
+                        <h4>Udit Narayan</h4>
+                        <h5>Python Developer</h5>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              <div class="slide active ">
+                      
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                      <div class="single-team">
+                        <div class="img-area">
+                          <img src="https://i.postimg.cc/wMMhrMDm/2.jpg" class="img-responsive" alt="">
+                          <div class="social">
+                            <ul class="list-inline">
+                              <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                              <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                              <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                              <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="img-text">
+                          <h4>Akshat Agrawal</h4>
+                          <h5>Hero</h5>
+                        </div>
+                      </div>
+                    </div>
+  
+                </div>
+            <div class="navigation">
+              <div class="btn active"></div>
+              <div class="btn"></div>
+              <div class="btn"></div>
+              <div class="btn"></div>
+              <div class="btn"></div>
+              <div class="btn"></div>
+            </div>
+</div>
+</div>
+</div>
+</div>
+   
+
+</div>
+</body>
+<script type="text/javascript">
+  var slides = document.querySelectorAll('.slide');
+  var btns = document.querySelectorAll('.btn');
+  let currentSlide = 1;
+
+  // Javascript for image slider manual navigation
+  var manualNav = function(manual){
+    slides.forEach((slide) => {
+      slide.classList.remove('active');
+
+      btns.forEach((btn) => {
+        btn.classList.remove('active');
+      });
+    });
+
+    slides[manual].classList.add('active');
+    btns[manual].classList.add('active');
+  }
+
+  btns.forEach((btn, i) => {
+    btn.addEventListener("click", () => {
+      manualNav(i);
+      currentSlide = i;
+    });
+  });
+
+  // Javascript for image slider autoplay navigation
+  var repeat = function(activeClass){
+    let active = document.getElementsByClassName('active');
+    let i = 1;
+
+    var repeater = () => {
+      setTimeout(function(){
+        [...active].forEach((activeSlide) => {
+          activeSlide.classList.remove('active');
+        });
+
+      slides[i].classList.add('active');
+      btns[i].classList.add('active');
+      i++;
+
+      if(slides.length == i){
+        i = 0;
+      }
+      if(i >= slides.length){
+        return;
+      }
+      repeater();
+    }, 6000);
+    }
+    repeater();
+  }
+  repeat();
+</script>
+
+</html>

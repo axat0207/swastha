@@ -1,0 +1,20 @@
+{
+  "name": "swastha",
+  "version": "1.0.0",
+  "description": "Website to Promote Mental, Physical and social growth",
+  "main": "index.js",
+  "scripts": {
+    "start": "vite",
+    "dev": "NODE_ENV=WATCH tailwindcss src/style.css -o public/style.css --watch --verbose"
+  },
+  "author": "Akshat Agrawal",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.2",
+    "tailwindcss": "^3.0.22",
+    "vite": "^2.8.3"
+  },
+  "dependencies": {
+    "postcss": "^8.4.6"
+  }
+}
