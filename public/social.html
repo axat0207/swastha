@@ -5,27 +5,496 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Social Health</title>
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
+<script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
+<script src="https://cdn.tailwindcss.com"></script>
+<script defer src="https://unpkg.com/alpinejs@3.2.4/dist/cdn.min.js"></script>
+<link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+
 </head>
 <body>
-     <!-- navbar   -->
-     <header class="text-gray-600 bg-cyan-500 body-font">
+       <!-- navbar   -->
+       <header class="text-gray-600 bg-cyan-500 -pb-10 body-font">
         <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
           <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
-              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
-            </svg>
-            <span class="ml-3 text-xl">Swastha-Social health</span>
+           
+            <span class="ml-3 text-xl">Swastha-Mental health</span>
           </a>
           <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
-            <a target="_blank" href="./index.html" class="mr-5 hover:text-gray-900">Home</a>
-            <a target="_blank" href="./physical.html" class="mr-5 hover:text-gray-900">Physical</a>
-            <a target="_blank" href="./social.html" class="mr-5 hover:text-gray-900">Social</a>
-            <a target="_blank" href="tp.html" class="mr-5 hover:text-gray-900">Our Team</a>
-            <a target="_blank" href="contact.html" class="mr-5 hover:text-gray-900">Contact us</a>
+     <div class="flex">  
+      <a href="index.html" class="mr-4 pt-[7px] hover:text-gray-900">Home</a>   
+<!-- mental link  -->
+            <a href="./mental.html">
+<div class="container flex justify-center mx-auto ">
+  <div x-data="{ open: false }" @mouseleave="open = false" class="relative">
+    <!-- Dropdown toggle button -->
+    <button
+      @mouseover="open = true"
+      class="flex   p-2 bg-cyan-500 rounded-md"
+    >
+      <span class="mr-">Mental</span>
+      <svg
+        class="w-6 h-6 text-white text-gray-800"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 20 20"
+        fill="currentColor"
+      >
+        <path
+          fill-rule="evenodd"
+          d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+          clip-rule="evenodd"
+        />
+      </svg>
+    </button>
+
+    <!-- Dropdown menu -->
+    <div
+      x-show="open"
+      class="absolute right-0 w-48 py-2 mt- bg-cyan-200 rounded-md shadow-xl"
+    >
+      <a
+        href="#"
+        class="block px-4 py-2 text-sm text-gray-300 text-gray-700 hover:bg-cyan-400 hover:text-white"
+      >
+        About Mental health
+      </a>
+      <a
+        href="#"
+        class="block px-4 py-2 text-sm text-gray-300 text-gray-700 hover:bg-cyan-400  hover:text-white"
+      >
+        Mental Disorder Vs Menal Health
+      </a>
+      <a
+        href="#"
+        class="block px-4 py-2 text-sm text-gray-300 text-gray-700 hover:bg-cyan-400  hover:text-white"
+      >
+        Myths Vs Fact
+      </a>
+      <a
+        href="#"
+        class="block px-4 py-2 text-sm text-gray-300 text-gray-700 hover:bg-cyan-400 hover:text-white"
+      >
+        Awarness
+      </a>
+    </div>
+  </div>
+</div> </a>
+<!-- physical link  -->
+<a href="./physical.html">
+  <div class="container flex justify-center mx-auto ">
+    <div x-data="{ open: false }" @mouseleave="open = false" class="relative">
+      <!-- Dropdown toggle button -->
+      <button
+        @mouseover="open = true"
+        class="flex   p-2 bg-cyan-500 rounded-md"
+      >
+        <span class="mr-">Physical</span>
+        <svg
+          class="w-6 h-6 text-white text-gray-800"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 20 20"
+          fill="currentColor"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+            clip-rule="evenodd"
+          />
+        </svg>
+      </button>
+  
+      <!-- Dropdown menu -->
+      <div
+        x-show="open"
+        class="absolute right-0 w-48 py-2 mt- bg-cyan-200 rounded-md shadow-xl"
+      >
+        <a
+          href="#"
+          class="block px-4 py-2 text-sm text-gray-300 text-gray-700 hover:bg-cyan-400 hover:text-white"
+        >
+          About physical health
+        </a>
+        <a
+          href="#"
+          class="block px-4 py-2 text-sm text-gray-300 text-gray-700 hover:bg-cyan-400  hover:text-white"
+        >
+          Physical Disorder Vs Physical Health
+        </a>
+        <a
+          href="#"
+          class="block px-4 py-2 text-sm text-gray-300 text-gray-700 hover:bg-cyan-400  hover:text-white"
+        >
+          Myths Vs Fact
+        </a>
+        <a
+          href="#"
+          class="block px-4 py-2 text-sm text-gray-300 text-gray-700 hover:bg-cyan-400 hover:text-white"
+        >
+          Awarness
+        </a>
+      </div>
+    </div>
+  
+  </div> </a>
+
+<!-- Social health   -->
+  <a href="./social.html">
+    <div class="container flex justify-center mx-auto ">
+      <div x-data="{ open: false }" @mouseleave="open = false" class="relative">
+        <!-- Dropdown toggle button -->
+        <button
+          @mouseover="open = true"
+          class="flex   p-2 bg-cyan-500 rounded-md"
+        >
+          <span class="mr-">Social</span>
+          <svg
+            class="w-6 h-6 text-white text-gray-800"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 20 20"
+            fill="currentColor"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+              clip-rule="evenodd"
+            />
+          </svg>
+        </button>
+    
+        <!-- Dropdown menu -->
+        <div
+          x-show="open"
+          class="absolute right-0 w-48 py-2 mt- bg-cyan-200 rounded-md shadow-xl"
+        >
+          <a
+            href="#"
+            class="block px-4 py-2 text-sm text-gray-300 text-gray-700 hover:bg-cyan-400 hover:text-white"
+          >
+            About Social health
+          </a>
+          <a
+            href="#"
+            class="block px-4 py-2 text-sm text-gray-300 text-gray-700 hover:bg-cyan-400  hover:text-white"
+          >
+            Awarness 
+          </a>
+          <a
+            href="#"
+            class="block px-4 py-2 text-sm text-gray-300 text-gray-700 hover:bg-cyan-400  hover:text-white"
+          >
+            Scientific Reserch
+          </a>
+          <a
+            href="#"
+            class="block px-4 py-2 text-sm text-gray-300 text-gray-700 hover:bg-cyan-400 hover:text-white"
+          >
+            Practices
+          </a>
+        </div>
+      </div>
+    </div> </a>
+</div>
+            
+          
+            
           </nav>
          
         </div>
       </header>
+
+<!-- first page  -->
+<section class="bg-emerald-100 text-gray-600 body-font">
+  <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+    <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+      <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Social health…
+        <br class="hidden lg:inline-block">
+        <div class="text-cyan-600 text-lg">
+
+         “It is an individual’s ability to handle
+        and act based on different social
+        conditions”
+        .</div>
+      </h1>
+      <p class="mb-8 leading-relaxed">We humans are the social animals. We are meant to have relationships
+        and connections for our health and wellness. So, in this developing
+        world of 21st century, being socially healthy is now emerging as the
+        new necessity to survive in current society. So before starting this
+        journey of social health let’s understand this general fact that social
+        health is more than just the prevention of mental illness and social
+        problems. </p>
+     
+    </div>
+    <div class="w-[400px]">
+      <img class="object-cover object-center rounded" alt="hero" src="images/social 01.jpg">
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- second page  -->
+<section class="bg-emerald-100">
+    <!-- Container for demo purpose -->
+    <div class="container rounded-md shadow-xl pt-8 px-6 mx-auto">
+
+      <!-- Section: Design Block -->
+      <section class=" text-gray-800 text-center lg:text-left background-radial-gradient">
+  
+        <div class="relative rounded-md shadow-2xl overflow-hidden bg-no-repeat bg-cover" style="
+              background-position: 50%;
+              background-image: url('images/social\ back\ 1.jpg');
+              height: 500px;
+            ">
+          <div class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed"
+            style="background-color: rgba(0, 0, 0, 0.75)">
+            <div class="flex justify-center items-center h-full">
+              <div class="text-center text-white px-6 py-6 md:py-0 md:px-12 max-w-[800px]">
+                <h2 class="text-5xl md:text-6xl xl:text-7xl font-bold tracking-tight leading-tight mb-12">
+                  What is social health?.
+                </h2>
+                <p class="text-lg">
+                  • Social health can be defined as individual’s ability to interact with
+other people and form good relations with them.
+• It can be understood as the level of comfort we feel while coming
+in different social situations.
+• Ability to change one’s own behaviour according to changing
+social situations is an important characteristic of social health.
+• So what we can conclude is that it’s the ability of the people to be
+free from want of basic necessities
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+      </section>
+      <!-- Section: Design Block -->
+      
+    </div>
+    <!-- Container for demo purpose -->
+</section>
+
+
+<!-- third page  -->
+<section class="text-gray-600 pt-12 bg-emerald-100 body-font">
+  <div class="container px-5  mx-auto">
+    <div class="flex flex-col text-center w-full mb-20">
+      <h2 class="text-xs text-indigo-500 tracking-widest font-medium title-font mb-1"></h2>
+      <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Dimensions of social health</h1>
+      <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table. Franzen you probably haven't heard of them man bun deep jianbing selfies heirloom prism food truck ugh squid celiac humblebrag.</p>
+    </div>
+    <div class="flex flex-wrap">
+      <div class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60">
+        <h2 class="text-lg sm:text-xl text-gray-900 font-medium title-font mb-2">Social Integration </h2>
+        <p class="leading-relaxed text-base mb-4">“Integration is a basic law of life; when we resist
+          it, disintegration is the natural result, both inside
+          and outside of us”.</p>
+        <a class="text-indigo-500 inline-flex items-center">Learn More
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+            <path d="M5 12h14M12 5l7 7-7 7"></path>
+          </svg>
+        </a>
+      </div>
+      <div class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60">
+        <h2 class="text-lg sm:text-xl text-gray-900 font-medium title-font mb-2">Social contribution</h2>
+        <p class="leading-relaxed text-base mb-4">As per Erikson, midlife is the period adults can
+          contribute most to the society and shape the
+          coming generation into productive members of
+          society”.</p>
+        <a class="text-indigo-500 inline-flex items-center">Learn More
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+            <path d="M5 12h14M12 5l7 7-7 7"></path>
+          </svg>
+        </a>
+      </div>
+      <div class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60">
+        <h2 class="text-lg sm:text-xl text-gray-900 font-medium title-font mb-2">Social coherence</h2>
+        <p class="leading-relaxed text-base mb-4">“In the evolution of mankind there has always
+          been a certain degree of social coherence”.</p>
+        <a class="text-indigo-500 inline-flex items-center">Learn More
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+            <path d="M5 12h14M12 5l7 7-7 7"></path>
+          </svg>
+        </a>
+      </div>
+      <div class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60">
+        <h2 class="text-lg sm:text-xl text-gray-900 font-medium title-font mb-2">Social actualization</h2>
+        <p class="leading-relaxed text-base mb-4">“Realizing your abilities makes your life easier
+          and better….
+          also implementing self-actualization beautifies
+          your character”.</p>
+        <a class="text-indigo-500 inline-flex items-center">Learn More
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+            <path d="M5 12h14M12 5l7 7-7 7"></path>
+          </svg>
+        </a>
+      </div>
+    </div>
+   
+  </div>
+</section>
+
+
+<!-- page 4  -->
+
+<div class="flex justify-around pt-16 py-12 bg-emerald-100">
+  <div class="block p-6 rounded-lg shadow-lg bg-white max-w-sm">
+    <h5 class="text-cyan-900 text-2xl pb-3 leading-tight font-medium mb-2">Why is social health important for students?</h5>
+    <p class="text-gray-700 leading-7 tracking-wide text-base mb-4">
+      • For students it’s important to have good social health
+as it helps them in learning how to balance their social
+life with their academic and professional lives. <br>
+• Maintaining an optimal level of social health allows
+students to build healthy relationships with others. <br>
+• Having a supportive social network allows students to
+develop assertive skills and make students in various
+social situations for who they actually are. <br>
+• For students surrounding themselves with a positive
+social network increases their self-esteem
+    </p>
+    
+  </div>
+  <div class="block p-6 rounded-lg shadow-lg bg-white max-w-sm">
+    <h5 class="text-cyan-900 text-2xl pb-3 leading-tight font-medium mb-2">How to improve your social health of
+      students by relieving stress?</h5>
+    <p class="text-gray-700 leading-7 tracking-wide text-base mb-4">
+      • Establishing communication with friends, peers, cousins,
+      teachers and more importantly parents. <br>
+      • Noting down your feelings when you can’t focus helps in
+      relieving stress and indirectly improves your social health
+      also. <br>
+   
+• Playing outdoor games drives away your loneliness and
+create a tendency of unity. <br>
+• Meditation helps the students to improve concentration
+and also improves their social health.
+    </p>
+    
+  </div>
+
+  
+</div>
+
+
+
+
+
+
+<!-- footer  -->
+<!-- footer  -->
+<footer class="text-gray-600 bg-gray-900 body-font">
+  <div class="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
+    <div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left md:mt-0 mt-10">
+      <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+      
+        <span class="ml-3 text-white text-3xl">Swastha</span>
+      </a>
+      <p class="mt-2 text-sm ml-12 text-gray-500">Self Care is Self Love</p>
+    </div>
+    <div class="flex-grow flex flex-wrap md:pr-20 -mb-10 md:text-left text-center order-first">
+      
+      <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+        <h2 class="title-font font-medium text-gray-900 tracking-widest text-white text-md mb-3">MENTAL</h2>
+        <nav class="list-none mb-10">
+          <li>
+            <a class="text-gray-600 hover:text-gray-700">Mental Health</a>
+          </li>
+          <li>
+            <a class="text-gray-600 hover:text-gray-700">Mental disorder</a>
+          </li>
+          <li>
+            <a class="text-gray-600 hover:text-gray-700">Myth vs fact</a>
+          </li>
+          <li>
+            <a class="text-gray-600 hover:text-gray-700">Awarness</a>
+          </li>
+        </nav>
+      </div>
+      <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+        <h2 class="title-font font-medium text-gray-900 tracking-widest text-white text-sm mb-3">SOCIAL</h2>
+        <nav class="list-none mb-10">
+          <li>
+            <a class="text-gray-600 hover:text-gray-800">Physical healh</a>
+          </li>
+          <li>
+            <a class="text-gray-600 hover:text-gray-800">Awarness</a>
+          </li>
+          <li>
+            <a class="text-gray-600 hover:text-gray-800">Scientific Reserch</a>
+          </li>
+          <li>
+            <a class="text-gray-600 hover:text-gray-800">Myth vs fact</a>
+          </li>
+        </nav>
+      </div>
+      <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+        <h2 class="title-font font-medium text-gray-900 tracking-widest  text-white text-sm mb-3">PHYSICAL</h2>
+        <nav class="list-none mb-10">
+          <li>
+            <a class="text-gray-600 hover:text-gray-700">Social Health</a>
+          </li>
+          <li>
+            <a class="text-gray-600 hover:text-gray-700">Awarness</a>
+          </li>
+          <li>
+            <a class="text-gray-600 hover:text-gray-700">scientific Reserch</a>
+          </li>
+          <li>
+            <a class="text-gray-600 hover:text-gray-700">Practices</a>
+          </li>
+        </nav>
+      </div>
+    </div>
+  </div>
+  <div class="bg-gray-100">
+    <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
+      <p class="text-gray-500 text-sm text-center sm:text-left">© 2020 Tailblocks —
+        <a href="https://twitter.com/knyttneve" rel="noopener noreferrer" class="text-gray-600 ml-1" target="_blank">@knyttneve</a>
+      </p>
+      <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
+        <a class="text-gray-500">
+          <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+            <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+          </svg>
+        </a>
+        <a class= " ml-3 text-gray-500">
+          <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+            <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+          </svg>
+        </a>
+        <a class="ml-3 text-gray-500">
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+            <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+            <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+          </svg>
+        </a>
+        <a class="ml-3 text-gray-500">
+          <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+            <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+            <circle cx="4" cy="4" r="2" stroke="none"></circle>
+          </svg>
+        </a>
+      </span>
+    </div>
+  </div>
+</footer>
+
 </body>
 </html>

@@ -16,196 +16,193 @@
 
 </head>
 <body>
-      < <!-- navbar   -->
-      <header class="text-gray-600 bg-cyan-500 -pb-10 body-font">
-          <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-            <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
-                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
-              </svg>
-              <span class="ml-3 text-xl">Swastha-Mental health</span>
-            </a>
-            <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
-       <div class="flex">  
-        <a href="index.html" class="mr-4 pt-[7px] hover:text-gray-900">Home</a>   
-  <!-- mental link  -->
-              <a href="./mental.html">
-  <div class="container flex justify-center mx-auto ">
-    <div x-data="{ open: false }" @mouseleave="open = false" class="relative">
-      <!-- Dropdown toggle button -->
-      <button
-        @mouseover="open = true"
-        class="flex   p-2 bg-cyan-500 rounded-md"
-      >
-        <span class="mr-">Mental</span>
-        <svg
-          class="w-6 h-6 text-white text-gray-800"
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 20 20"
-          fill="currentColor"
-        >
-          <path
-            fill-rule="evenodd"
-            d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-            clip-rule="evenodd"
-          />
-        </svg>
-      </button>
-  
-      <!-- Dropdown menu -->
-      <div
-        x-show="open"
-        class="absolute right-0 w-48 py-2 mt- bg-cyan-200 rounded-md shadow-xl"
-      >
-        <a
-          href="#"
-          class="block px-4 py-2 text-sm text-gray-300 text-gray-700 hover:bg-cyan-400 hover:text-white"
-        >
-          About Mental health
-        </a>
-        <a
-          href="#"
-          class="block px-4 py-2 text-sm text-gray-300 text-gray-700 hover:bg-cyan-400  hover:text-white"
-        >
-          Mental Disorder Vs Menal Health
-        </a>
-        <a
-          href="#"
-          class="block px-4 py-2 text-sm text-gray-300 text-gray-700 hover:bg-cyan-400  hover:text-white"
-        >
-          Myths Vs Fact
-        </a>
-        <a
-          href="#"
-          class="block px-4 py-2 text-sm text-gray-300 text-gray-700 hover:bg-gray-400 hover:text-white"
-        >
-          Awarness
-        </a>
-      </div>
-    </div>
-  </div> </a>
-  <!-- physical link  -->
-  <a href="./physical.html">
-    <div class="container flex justify-center mx-auto ">
-      <div x-data="{ open: false }" @mouseleave="open = false" class="relative">
-        <!-- Dropdown toggle button -->
-        <button
-          @mouseover="open = true"
-          class="flex   p-2 bg-cyan-500 rounded-md"
-        >
-          <span class="mr-">Physical</span>
-          <svg
-            class="w-6 h-6 text-white text-gray-800"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 20 20"
-            fill="currentColor"
-          >
-            <path
-              fill-rule="evenodd"
-              d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-              clip-rule="evenodd"
-            />
-          </svg>
-        </button>
-    
-        <!-- Dropdown menu -->
-        <div
-          x-show="open"
-          class="absolute right-0 w-48 py-2 mt- bg-cyan-200 rounded-md shadow-xl"
-        >
-          <a
-            href="#"
-            class="block px-4 py-2 text-sm text-gray-300 text-gray-700 hover:bg-cyan-400 hover:text-white"
-          >
-            About Mental health
-          </a>
-          <a
-            href="#"
-            class="block px-4 py-2 text-sm text-gray-300 text-gray-700 hover:bg-cyan-400  hover:text-white"
-          >
-            Mental Disorder Vs Menal Health
-          </a>
-          <a
-            href="#"
-            class="block px-4 py-2 text-sm text-gray-300 text-gray-700 hover:bg-cyan-400  hover:text-white"
-          >
-            Myths Vs Fact
-          </a>
-          <a
-            href="#"
-            class="block px-4 py-2 text-sm text-gray-300 text-gray-700 hover:bg-gray-400 hover:text-white"
-          >
-            Awarness
-          </a>
-        </div>
-      </div>
-    
-    </div> </a>
-  
-  <!-- Social health   -->
-    <a href="./social.html">
-      <div class="container flex justify-center mx-auto ">
-        <div x-data="{ open: false }" @mouseleave="open = false" class="relative">
-          <!-- Dropdown toggle button -->
-          <button
-            @mouseover="open = true"
-            class="flex   p-2 bg-cyan-500 rounded-md"
-          >
-            <span class="mr-">Social</span>
-            <svg
-              class="w-6 h-6 text-white text-gray-800"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 20 20"
-              fill="currentColor"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                clip-rule="evenodd"
-              />
-            </svg>
-          </button>
-      
-          <!-- Dropdown menu -->
-          <div
-            x-show="open"
-            class="absolute right-0 w-48 py-2 mt- bg-cyan-200 rounded-md shadow-xl"
-          >
-            <a
-              href="#"
-              class="block px-4 py-2 text-sm text-gray-300 text-gray-700 hover:bg-cyan-400 hover:text-white"
-            >
-              About Social health
-            </a>
-            <a
-              href="#"
-              class="block px-4 py-2 text-sm text-gray-300 text-gray-700 hover:bg-cyan-400  hover:text-white"
-            >
-              Awarness 
-            </a>
-            <a
-              href="#"
-              class="block px-4 py-2 text-sm text-gray-300 text-gray-700 hover:bg-cyan-400  hover:text-white"
-            >
-              Scientific Reserch
-            </a>
-            <a
-              href="#"
-              class="block px-4 py-2 text-sm text-gray-300 text-gray-700 hover:bg-cyan-400 hover:text-white"
-            >
-              Practices
-            </a>
-          </div>
-        </div>
-      </div> </a>
+  <header class="text-gray-600 bg-cyan-500 -pb-10 body-font">
+    <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+      <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+       
+        <span class="ml-3 text-xl">Swastha-Mental health</span>
+      </a>
+      <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
+ <div class="flex">  
+  <a href="index.html" class="mr-4 pt-[7px] hover:text-gray-900">Home</a>   
+<!-- mental link  -->
+        <a href="./mental.html">
+<div class="container flex justify-center mx-auto ">
+<div x-data="{ open: false }" @mouseleave="open = false" class="relative">
+<!-- Dropdown toggle button -->
+<button
+  @mouseover="open = true"
+  class="flex   p-2 bg-cyan-500 rounded-md"
+>
+  <span class="mr-">Mental</span>
+  <svg
+    class="w-6 h-6 text-white text-gray-800"
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 20 20"
+    fill="currentColor"
+  >
+    <path
+      fill-rule="evenodd"
+      d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+      clip-rule="evenodd"
+    />
+  </svg>
+</button>
+
+<!-- Dropdown menu -->
+<div
+  x-show="open"
+  class="absolute right-0 w-48 py-2 mt- bg-cyan-200 rounded-md shadow-xl"
+>
+  <a
+    href="#"
+    class="block px-4 py-2 text-sm text-gray-300 text-gray-700 hover:bg-cyan-400 hover:text-white"
+  >
+    About Mental health
+  </a>
+  <a
+    href="#"
+    class="block px-4 py-2 text-sm text-gray-300 text-gray-700 hover:bg-cyan-400  hover:text-white"
+  >
+    Mental Disorder Vs Menal Health
+  </a>
+  <a
+    href="#"
+    class="block px-4 py-2 text-sm text-gray-300 text-gray-700 hover:bg-cyan-400  hover:text-white"
+  >
+    Myths Vs Fact
+  </a>
+  <a
+    href="#"
+    class="block px-4 py-2 text-sm text-gray-300 text-gray-700 hover:bg-cyan-400 hover:text-white"
+  >
+    Awarness
+  </a>
+</div>
+</div>
+</div> </a>
+<!-- physical link  -->
+<a href="./physical.html">
+<div class="container flex justify-center mx-auto ">
+<div x-data="{ open: false }" @mouseleave="open = false" class="relative">
+  <!-- Dropdown toggle button -->
+  <button
+    @mouseover="open = true"
+    class="flex   p-2 bg-cyan-500 rounded-md"
+  >
+    <span class="mr-">Physical</span>
+    <svg
+      class="w-6 h-6 text-white text-gray-800"
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 20 20"
+      fill="currentColor"
+    >
+      <path
+        fill-rule="evenodd"
+        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+        clip-rule="evenodd"
+      />
+    </svg>
+  </button>
+
+  <!-- Dropdown menu -->
+  <div
+    x-show="open"
+    class="absolute right-0 w-48 py-2 mt- bg-cyan-200 rounded-md shadow-xl"
+  >
+    <a
+      href="#"
+      class="block px-4 py-2 text-sm text-gray-300 text-gray-700 hover:bg-cyan-400 hover:text-white"
+    >
+      About physical health
+    </a>
+    <a
+      href="#"
+      class="block px-4 py-2 text-sm text-gray-300 text-gray-700 hover:bg-cyan-400  hover:text-white"
+    >
+      Physical Disorder Vs Physical Health
+    </a>
+    <a
+      href="#"
+      class="block px-4 py-2 text-sm text-gray-300 text-gray-700 hover:bg-cyan-400  hover:text-white"
+    >
+      Myths Vs Fact
+    </a>
+    <a
+      href="#"
+      class="block px-4 py-2 text-sm text-gray-300 text-gray-700 hover:bg-cyan-400 hover:text-white"
+    >
+      Awarness
+    </a>
   </div>
-              
-            
-              
-            </nav>
-           
-          </div>
-        </header>
+</div>
+
+</div> </a>
+
+<!-- Social health   -->
+<a href="./social.html">
+<div class="container flex justify-center mx-auto ">
+  <div x-data="{ open: false }" @mouseleave="open = false" class="relative">
+    <!-- Dropdown toggle button -->
+    <button
+      @mouseover="open = true"
+      class="flex   p-2 bg-cyan-500 rounded-md"
+    >
+      <span class="mr-">Social</span>
+      <svg
+        class="w-6 h-6 text-white text-gray-800"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 20 20"
+        fill="currentColor"
+      >
+        <path
+          fill-rule="evenodd"
+          d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+          clip-rule="evenodd"
+        />
+      </svg>
+    </button>
+
+    <!-- Dropdown menu -->
+    <div
+      x-show="open"
+      class="absolute right-0 w-48 py-2 mt- bg-cyan-200 rounded-md shadow-xl"
+    >
+      <a
+        href="#"
+        class="block px-4 py-2 text-sm text-gray-300 text-gray-700 hover:bg-cyan-400 hover:text-white"
+      >
+        About Social health
+      </a>
+      <a
+        href="#"
+        class="block px-4 py-2 text-sm text-gray-300 text-gray-700 hover:bg-cyan-400  hover:text-white"
+      >
+        Awarness 
+      </a>
+      <a
+        href="#"
+        class="block px-4 py-2 text-sm text-gray-300 text-gray-700 hover:bg-cyan-400  hover:text-white"
+      >
+        Scientific Reserch
+      </a>
+      <a
+        href="#"
+        class="block px-4 py-2 text-sm text-gray-300 text-gray-700 hover:bg-cyan-400 hover:text-white"
+      >
+        Practices
+      </a>
+    </div>
+  </div>
+</div> </a>
+</div>
+        
+      
+        
+      </nav>
+     
+    </div>
+  </header>
 
       <!-- Container for demo purpose -->
 <div class="container bg-orange-100  px-6 mx-auto">
@@ -396,19 +393,13 @@ silver.”
         focus:outline-none
       " type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
         aria-controls="collapseOne">
-          Mental Health question 1
+        What is physical health ?
       </button>
     </h2>
     <div id="collapseOne" class="accordion-collapse collapse " aria-labelledby="headingOne"
       data-bs-parent="#accordionExample">
       <div class="accordion-body py-4 px-5">
-        <strong>This is the first item's accordion body.</strong> It is shown by default,
-        until the collapse plugin adds the appropriate classes that we use to style each
-        element. These classes control the overall appearance, as well as the showing and
-        hiding via CSS transitions. You can modify any of this with custom CSS or overriding
-        our default variables. It's also worth noting that just about any HTML can go within
-        the <code>.accordion-body</code>, though the transition does limit overflow.
-      </div>
+        physical health is the state of being free from illness or injury.it can cover a wide range of areas including healthy diet ,healthy weight ,dental health, personal hygiene and sleep .physical health is vital for overall well-being.  </div>
     </div>
   </div>
   <div class="accordion-item bg-orange-800 text-white border border-gray-200">
@@ -430,18 +421,13 @@ silver.”
         focus:outline-none
       " type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
         aria-controls="collapseTwo">
-        Mental health question 2
+        Why is physical health important for the overall health of children?
       </button>
     </h2>
     <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
       data-bs-parent="#accordionExample">
       <div class="accordion-body py-4 px-5">
-        <strong>This is the second item's accordion body.</strong> It is hidden by default,
-        until the collapse plugin adds the appropriate classes that we use to style each
-        element. These classes control the overall appearance, as well as the showing and
-        hiding via CSS transitions. You can modify any of this with custom CSS or overriding
-        our default variables. It's also worth noting that just about any HTML can go within
-        the <code>.accordion-body</code>, though the transition does limit overflow.
+        having a regular routine reduces stress and improves health .It is better if routine includes helping children in their studies without a good physical health .The development of children will stop and their future life will become cruel.
       </div>
     </div>
   </div>
@@ -464,18 +450,13 @@ silver.”
         focus:outline-none
       " type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
         aria-controls="collapseThree">
-        Mental health question 2
+        Is yoga and meditation necessary for the physical health of children?
       </button>
     </h2>
     <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
       data-bs-parent="#accordionExample">
       <div class="accordion-body py-4 px-5">
-        <strong>This is the third item's accordion body.</strong> It is hidden by default,
-        until the collapse plugin adds the appropriate classes that we use to style each
-        element. These classes control the overall appearance, as well as the showing and
-        hiding via CSS transitions. You can modify any of this with custom CSS or overriding
-        our default variables. It's also worth noting that just about any HTML can go within
-        the <code>.accordion-body</code>, though the transition does limit overflow.
+        Yoga are very important for all ground development at a student young and student age. It helps in making your child strong physically and mental health. sukhasana can act as a brain booster  and stress buster for your and as well as enhance concentration.
       </div>
     </div>
   </div>
@@ -487,51 +468,32 @@ silver.”
 </section>
 
 
-
 <!-- footer  -->
 <footer class="text-gray-600 bg-gray-900 body-font">
   <div class="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
     <div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left md:mt-0 mt-10">
       <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
-          <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
-        </svg>
+      
         <span class="ml-3 text-white text-3xl">Swastha</span>
       </a>
       <p class="mt-2 text-sm ml-12 text-gray-500">Self Care is Self Love</p>
     </div>
     <div class="flex-grow flex flex-wrap md:pr-20 -mb-10 md:text-left text-center order-first">
-      <div class="lg:w-1/4 md:w-1/2 w-full px-4">
-        <h2 class="title-font font-medium text-gray-900 tracking-widest text-gray-100 text-md mb-3">SELF CARE</h2>
-        <nav class="list-none mb-10">
-          <li>
-            <a class="text-gray-600 hover:text-gray-700">First Link</a>
-          </li>
-          <li>
-            <a class="text-gray-600 hover:text-gray-700">Second Link</a>
-          </li>
-          <li>
-            <a class="text-gray-600 hover:text-gray-700">Third Link</a>
-          </li>
-          <li>
-            <a class="text-gray-600 hover:text-gray-700">Fourth Link</a>
-          </li>
-        </nav>
-      </div>
+      
       <div class="lg:w-1/4 md:w-1/2 w-full px-4">
         <h2 class="title-font font-medium text-gray-900 tracking-widest text-white text-md mb-3">MENTAL</h2>
         <nav class="list-none mb-10">
           <li>
-            <a class="text-gray-600 hover:text-gray-700">First Link</a>
+            <a class="text-gray-600 hover:text-gray-700">Mental Health</a>
           </li>
           <li>
-            <a class="text-gray-600 hover:text-gray-700">Second Link</a>
+            <a class="text-gray-600 hover:text-gray-700">Mental disorder</a>
           </li>
           <li>
-            <a class="text-gray-600 hover:text-gray-700">Third Link</a>
+            <a class="text-gray-600 hover:text-gray-700">Myth vs fact</a>
           </li>
           <li>
-            <a class="text-gray-600 hover:text-gray-700">Fourth Link</a>
+            <a class="text-gray-600 hover:text-gray-700">Awarness</a>
           </li>
         </nav>
       </div>
@@ -539,16 +501,16 @@ silver.”
         <h2 class="title-font font-medium text-gray-900 tracking-widest text-white text-sm mb-3">SOCIAL</h2>
         <nav class="list-none mb-10">
           <li>
-            <a class="text-gray-600 hover:text-gray-800">First Link</a>
+            <a class="text-gray-600 hover:text-gray-800">Physical healh</a>
           </li>
           <li>
-            <a class="text-gray-600 hover:text-gray-800">Second Link</a>
+            <a class="text-gray-600 hover:text-gray-800">Awarness</a>
           </li>
           <li>
-            <a class="text-gray-600 hover:text-gray-800">Third Link</a>
+            <a class="text-gray-600 hover:text-gray-800">Scientific Reserch</a>
           </li>
           <li>
-            <a class="text-gray-600 hover:text-gray-800">Fourth Link</a>
+            <a class="text-gray-600 hover:text-gray-800">Myth vs fact</a>
           </li>
         </nav>
       </div>
@@ -556,16 +518,16 @@ silver.”
         <h2 class="title-font font-medium text-gray-900 tracking-widest  text-white text-sm mb-3">PHYSICAL</h2>
         <nav class="list-none mb-10">
           <li>
-            <a class="text-gray-600 hover:text-gray-700">First Link</a>
+            <a class="text-gray-600 hover:text-gray-700">Social Health</a>
           </li>
           <li>
-            <a class="text-gray-600 hover:text-gray-700">Second Link</a>
+            <a class="text-gray-600 hover:text-gray-700">Awarness</a>
           </li>
           <li>
-            <a class="text-gray-600 hover:text-gray-700">Third Link</a>
+            <a class="text-gray-600 hover:text-gray-700">scientific Reserch</a>
           </li>
           <li>
-            <a class="text-gray-600 hover:text-gray-700">Fourth Link</a>
+            <a class="text-gray-600 hover:text-gray-700">Practices</a>
           </li>
         </nav>
       </div>
@@ -603,5 +565,6 @@ silver.”
     </div>
   </div>
 </footer>
+
 </body>
 </html>
